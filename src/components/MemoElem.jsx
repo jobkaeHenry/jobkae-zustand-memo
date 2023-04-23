@@ -4,7 +4,7 @@ import { useMemoStore } from "../store/MemoList";
 const MemoElem = (props) => {
   const { children, id } = props;
   const { removeMemo } = useMemoStore();
-  
+
   return (
     <MemoWrapper>
       <div>{children}</div>
@@ -29,6 +29,7 @@ const MemoWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 16px;
+  z-index: 999;
 `;
 
 const RemoveButton = styled.button`

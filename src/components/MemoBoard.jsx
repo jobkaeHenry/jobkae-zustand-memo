@@ -5,7 +5,7 @@ const MemoBoard = (props) => {
   return (
     <MemoWrapper>
       {props.children}
-      <LOL>떠든사람:잡캐헨리</LOL>
+      <LOL>떠든사람 : 잡캐헨리</LOL>
     </MemoWrapper>
   );
 };

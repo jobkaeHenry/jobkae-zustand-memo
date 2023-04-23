@@ -4,11 +4,13 @@ import { useState } from "react";
 const MemoInput = () => {
   const { addMemo } = useMemoStore();
   const [value, setValue] = useState("");
+
   return (
     <AddMemoForm
       onSubmit={(e) => {
         e.preventDefault();
         addMemo(value);
+        
         setValue("");
       }}
     >

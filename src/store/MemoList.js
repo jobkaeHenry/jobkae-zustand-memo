@@ -2,11 +2,13 @@ import { create } from "zustand";
 
 export const useMemoStore = create((set) => ({
   memoList: [],
-  addMemo: (content) =>
+  addMemo: (val) =>
     set((prev) => ({
-      memoList: [...prev.memoList, { content, id: new Date() }],
+      memoList: [
+        ...prev.memoList,
+        { content: val, id: new Date().getMilliseconds() + val },
+      ],
     })),
-
   removeMemo: (id) =>
     set((prev) => ({ memoList: prev.memoList.filter((e) => e.id !== id) })),
 }));
