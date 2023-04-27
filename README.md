@@ -10,9 +10,6 @@ yarn start 커맨드를 입력하면 실행됩니다
 ### `yarn build`
 yarn build 커맨드를 입력하면 빌드를 진행합니다
 
-**스타일링**<br>
-<img src="https://img.shields.io/badge/emotion-DB7093?style=flat-square&logo=styled-components&logoColor=white"/><br>
-
 
 # 강의
 React 상태관리라이브러리 너무 많아서 못고르겠다.. 장단점 한번에 비교해보기도 너무 힘들고.. 그런 여러분을 위해 준비해봤습니다. 5분만에 알아보는 Zustand의 장,단점, 메모앱을 만들어보면서 배우는 사용법까지 한번에 알아보세요
